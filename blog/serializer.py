@@ -24,6 +24,7 @@ class MediaPostSerializer(serializers.ModelSerializer):
             "image",
             "document",
             "media_post",
+            "media_type",
         ]
 
 

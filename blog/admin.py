@@ -127,7 +127,7 @@ class PostAdmin(admin.ModelAdmin):
         return count
 
     def media_count(self, post):
-        count = MediaPost.objects.count()
+        count = MediaPost.objects.filter(id=post.media.id).count()
         return count
 
 

@@ -27,8 +27,8 @@ class PostViewSet(ModelViewSet):
 class CategoryViewSet(ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    filter_backends = [DjangoFilterBackend]
-    pagination_class = DefaultPagination
+    # filter_backends = [DjangoFilterBackend]
+    # pagination_class = DefaultPagination
 
     def get_serializer_context(self):
         return {"request": self.request}
@@ -42,8 +42,8 @@ class CategoryViewSet(ModelViewSet):
 class MediaPostViewSet(ModelViewSet):
     queryset = MediaPost.objects.all()
     serializer_class = MediaPostSerializer
-    filter_backends = [DjangoFilterBackend]
-    pagination_class = DefaultPagination
+    # filter_backends = [DjangoFilterBackend]
+    # pagination_class = DefaultPagination
 
     def get_serializer_context(self):
         return {"request": self.request}
@@ -57,8 +57,8 @@ class MediaPostViewSet(ModelViewSet):
 class RelatedPostViewSet(ModelViewSet):
     queryset = RelatedPost.objects.all()
     serializer_class = RelatedPostSerializer
-    filter_backends = [DjangoFilterBackend]
-    pagination_class = DefaultPagination
+    # filter_backends = [DjangoFilterBackend]
+    # pagination_class = DefaultPagination
 
     def get_serializer_context(self):
         return {"request": self.request}
