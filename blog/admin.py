@@ -11,7 +11,7 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = [
         "name",
         "email",
-        "phone_number",
+        
         "post_count",
     ]
     search_fields = [
@@ -30,7 +30,7 @@ class AuthorAdmin(admin.ModelAdmin):
         return author.name.email
 
     def phone_number(self, author):
-        return author.name.phone_no
+        return author.name
 
 
 @admin.register(Category)

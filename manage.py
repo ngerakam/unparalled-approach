@@ -11,7 +11,7 @@ def main():
     if DEBUG:
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hepto.settings.local')
     else:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hepto.settings.prodclear')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hepto.settings.prod')
 
     
     try:
