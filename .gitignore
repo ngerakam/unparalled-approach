@@ -5,4 +5,4 @@ venv/
 db.sqlite3
 .coverage
 .vscode/
-**__pycache__/settings/__pycache__/
+static/
