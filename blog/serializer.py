@@ -66,6 +66,7 @@ class PostSerializer(serializers.ModelSerializer):
             "slug",
             "author",
             "content",
+            "excerpt",
             "publication_date",
             "updated_date",
             "reads",

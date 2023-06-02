@@ -100,6 +100,7 @@ class Post(models.Model):
     slug = models.SlugField(unique=True)
     author = models.ForeignKey(Author, blank=True, null=True, on_delete=models.SET_NULL)
     content = HTMLField()
+    excerpt = HTMLField(max_length=100, blank=True)
     publication_date = models.DateTimeField(auto_created=True)
     updated_date = models.DateTimeField(auto_now=True)
     reads = models.IntegerField(blank=True, null=True)
